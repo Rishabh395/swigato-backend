@@ -20,6 +20,8 @@ app.use('/api',require('./Routes/OrderData'))
 app.get('/', async (req, res) => {
       // let data= mongoDB.db.collection("fooData2");
       // console.log(data);
+  res.write("<h1>hello</h1>")
+  res.end()
 })
 
 app.listen(port, () => {
